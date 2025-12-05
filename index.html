@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My ChatGPT Manuscript</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 800px; margin: 2rem auto; padding: 1rem; line-height: 1.6; }
+    p { margin-bottom: 1rem; }
+    strong { color: #333; }
+  </style>
+</head>
+<body>
+  <h1>ChatGPT Manuscript</h1>
+  <div id="manuscript"></div>
+
+  <script>
+    // Example ChatGPT thread
+    const thread = [
+      { speaker: "User", text: "I want to write a manuscript." },
+      { speaker: "ChatGPT", text: "Sure, let's outline it..." },
+      { speaker: "User", text: "Make it simple." },
+      { speaker: "ChatGPT", text: "Here’s a minimal example..." }
+    ];
+
+    const container = document.getElementById("manuscript");
+    thread.forEach(msg => {
+      const p = document.createElement("p");
+      p.innerHTML = `<strong>${msg.speaker}:</strong> ${msg.text}`;
+      container.appendChild(p);
+    });
+  </script>
+</body>
+</html>
