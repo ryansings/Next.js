@@ -1,33 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My ChatGPT Manuscript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Map</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Georgia, serif; max-width: 800px; margin: 2rem auto; padding: 1rem; line-height: 1.6; }
-    p { margin-bottom: 1rem; }
-    strong { color: #333; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6c63ff, #00c2ff);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: #fff;
+      color: #6c63ff;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #6c63ff;
+      color: #fff;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      min-width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #6c63ff;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>ChatGPT Manuscript</h1>
-  <div id="manuscript"></div>
 
-  <script>
-    // Example ChatGPT thread
-    const thread = [
-      { speaker: "User", text: "I want to write a manuscript." },
-      { speaker: "ChatGPT", text: "Sure, let's outline it..." },
-      { speaker: "User", text: "Make it simple." },
-      { speaker: "ChatGPT", text: "Here’s a minimal example..." }
-    ];
+  <header>
+    <h1>Signal Map</h1>
+    <p>Stop spinning in loops. Learn to read your body, your thoughts, and your impulses. Transform internal chaos into clarity with small daily wins.</p>
+    <a href="#get-started" class="cta-button">Start Your Map</a>
+  </header>
 
-    const container = document.getElementById("manuscript");
-    thread.forEach(msg => {
-      const p = document.createElement("p");
-      p.innerHTML = `<strong>${msg.speaker}:</strong> ${msg.text}`;
-      container.appendChild(p);
-    });
-  </script>
+  <section id="about">
+    <h2>What is Signal?</h2>
+    <p>Signal is a framework for noticing the impulses and urges before they take over. It’s a treasure map of your own nervous system, designed for those who want to move fast, feel more, and act intentionally. No scripts. Just signals.</p>
+  </section>
+
+  <section id="features">
+    <h2>How It Works</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Notice</h3>
+        <p>Learn to catch the first flicker of tension, thought, or urge before it becomes a collapse. Your body talks first—listen.</p>
+      </div>
+      <div class="feature">
+        <h3>Name</h3>
+        <p>Identify the impulse and the old belief it’s tied to. Separating “you” from your default programming creates space for choice.</p>
+      </div>
+      <div class="feature">
+        <h3>Navigate</h3>
+        <p>Take action aligned with what actually matters to you, rather than reacting to old patterns. Small wins compound into real change.</p>
+      </div>
+      <div class="feature">
+        <h3>Reflect</h3>
+        <p>End the day with a simple check-in: what signals showed up, what did you notice, and what worked? Awareness grows with consistency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started">
+    <h2>Start Mapping Your Signals</h2>
+    <p>Begin your journey today. Fill out your first Signal Map entry and start noticing your impulses, beliefs, and micro-actions that shape your life.</p>
+    <a href="#" class="cta-button">Create Your First Map</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Signal Map. Built for clarity, chaos, and small daily wins. Learn more at <a href="#">signalmap.com</a></p>
+  </footer>
+
 </body>
 </html>
