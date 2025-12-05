@@ -1,0 +1,3 @@
+body { font-family: sans-serif; padding: 20px; }
+input, button { display: block; margin: 10px 0; width: 300px; padding: 5px; }
+.signal-entry { background: #f7f7f7; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
